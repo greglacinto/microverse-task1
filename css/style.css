@@ -10,8 +10,7 @@ section {
   font-family: sans-serif;
 }
 
-div {
-  width: 50%;
+form-container {
   margin: 0 auto;
 }
 
@@ -26,11 +25,12 @@ div {
 }
 
 form{
+  width: 60%;
   background-color: #2C2C4B;
   color: white;
   padding: 2rem;
   border-radius: .5rem;
-  margin-top: 3.5rem;
+  margin: 3.5rem auto;
 }
 
 .form-section{
@@ -38,11 +38,10 @@ form{
   margin-bottom: 1rem;
 }
 
-label{
-  width: 100%;
-}
 
-input{
+
+.form-section input, select{
+  box-sizing: border-box;
   width: 100%;
   margin-top: .5rem;
   padding: .6rem 1rem;
@@ -52,5 +51,19 @@ input{
 
 input::placeholder{
   font-size: 1rem;
+}
+
+#radio-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-box {
+  margin-bottom: .5rem;
+}
+
+.radio-box label {
+  width: 0;
 }
 

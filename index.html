@@ -8,7 +8,7 @@
 
   <body>
     <section>
-      <div>
+      <div id="form-container">
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
 
@@ -27,7 +27,38 @@
             <label for="number" id="number-label">Age (option)</label>
             <input type="number" id="number" placeholder="Enter Your Age" min="10" max="60">
           </div>
-          
+
+          <div class="form-section">
+            <label for="number" id="number-label">Which option best describes your current role?</label>
+            <select type="number" id="dropdown" placeholder="Enter Your Age" >
+              <option disabled selected value>Select Current role</option>
+              <option>Student </option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div id="radio-div">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="radio-box">
+              <input type="radio" id="definitely" value="definitely">
+              <label for="definitely">Definitely</label> <br>
+            </div>
+            
+            <div class="radio-box">
+              <input type="radio" id="radio" value="maybe">
+              <label for="maybe" id="radio-label">Maybe</label> <br>
+            </div>
+            
+            <div class="radio-box">
+              <input type="radio" id="radio" value="not sure">
+              <label for="not-sure" id="radio-label">Not sure</label> <br>
+            </div>
+            
+          </div>
+
         </form>
       </div>
 
