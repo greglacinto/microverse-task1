@@ -10,8 +10,7 @@ section {
   font-family: sans-serif;
 }
 
-div {
-  width: 50%;
+form-container {
   margin: 0 auto;
 }
 
@@ -26,22 +25,23 @@ div {
 }
 
 form{
+  width: 60%;
   background-color: #2C2C4B;
   color: white;
   padding: 2rem;
   border-radius: .5rem;
-  margin-top: 3.5rem;
+  margin: 3.5rem auto;
 }
 
 .form-section{
   text-align: left;
+  margin-bottom: 1rem;
 }
 
-label{
-  width: 100%;
-}
 
-input{
+
+.form-section input, select{
+  box-sizing: border-box;
   width: 100%;
   margin-top: .5rem;
   padding: .6rem 1rem;
@@ -51,5 +51,56 @@ input{
 
 input::placeholder{
   font-size: 1rem;
+}
+
+#radio-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+#checkbox-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: .5rem;
+}
+
+.mb-5 label {
+  width: 0;
+}
+
+span{
+  font-size: .8rem;
+}
+
+.form-section #comments{
+  width: 100%;
+}
+
+.form-section textarea{
+  margin-top: .5rem;
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.form-section textarea::placeholder{
+  font-size: 1rem;
+}
+
+button{
+  width: 100%;
+  background-color: #37AF65;
+  padding: .8rem 0;
+  border: 0;
+  border-radius: .5rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
