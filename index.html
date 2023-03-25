@@ -42,22 +42,98 @@
 
           <div id="radio-div">
             <p>Would you recommend freeCodeCamp to a friend?</p>
-            <div class="radio-box">
-              <input type="radio" id="definitely" value="definitely">
+            <div class="mb-5">
+              <input type="radio" name="radio" id="definitely" value="definitely">
               <label for="definitely">Definitely</label> <br>
             </div>
             
-            <div class="radio-box">
-              <input type="radio" id="radio" value="maybe">
+            <div class="mb-5">
+              <input type="radio" name="radio" id="radio" value="maybe">
               <label for="maybe" id="radio-label">Maybe</label> <br>
             </div>
             
-            <div class="radio-box">
-              <input type="radio" id="radio" value="not sure">
+            <div class="mb-5">
+              <input type="radio" name="radio" id="radio" value="not sure">
               <label for="not-sure" id="radio-label">Not sure</label> <br>
             </div>
-            
           </div>
+
+          <div class="form-section">
+            <label for="number" id="number-label">What is your favorite feature of freeCodeCamp?</label>
+            <select type="number" id="dropdown" placeholder="Enter Your Age" >
+              <option disabled selected value>Select an option</option>
+              <option>Challenges </option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Sources</option>
+            </select>
+          </div>
+
+          <div id="checkbox-div">
+            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Front end projects</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Back end projects</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Data Visualization</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Challenges</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Open Source Community</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Gitter help rooms</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Videos</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">City Meetups</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Wiki</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Forum</label> <br>
+            </div>
+
+            <div class="mb-5">
+              <input type="checkbox" id="definitely" value="definitely">
+              <label for="definitely">Additional Courses</label> <br>
+            </div>
+          
+          </div>
+
+          <div class="form-section">
+            <label for="comments" id="comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Enter your comments here..."></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
 
         </form>
       </div>
